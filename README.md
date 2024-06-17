@@ -195,13 +195,9 @@ is tagged correctly.
     * `ghcr.io/silly-development/yolks:mariadb_11.2`
   * [`MariaDB 11.3`](/mariadb/11.3)
     * `ghcr.io/silly-development/yolks:mariadb_11.3`
-  * [`MariaDB 11.4`](/mariadb/11.4)
-    * `ghcr.io/silly-development/yolks:mariadb_11.4`
 
 ### [MongoDB](/mongodb)
 
-  * [`MongoDB 4`](/mongodb/4)
-    * `ghcr.io/silly-development/yolks:mongodb_4`
   * [`MongoDB 5`](/mongodb/5)
     * `ghcr.io/silly-development/yolks:mongodb_5`
  * [`MongoDB 6`](/mongodb/6)
