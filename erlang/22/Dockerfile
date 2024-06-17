@@ -1,6 +1,6 @@
 FROM        --platform=$TARGETOS/$TARGETARCH erlang:22-alpine
 
-LABEL       author="Pascal Zarrad" maintainer="p.zarrad@outlook.de"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT

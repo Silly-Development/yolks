@@ -1,6 +1,6 @@
 FROM --platform=$TARGETOS/$TARGETARCH elixir:1.14.5-slim
 
-LABEL author="MrAvox" maintainer="mravox@proton.me"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 RUN  apt update \
             && apt -y install git dnsutils curl iproute2 ffmpeg tini \

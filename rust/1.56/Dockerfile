@@ -1,6 +1,6 @@
 FROM        --platform=$TARGETOS/$TARGETARCH rust:1.56-slim
 
-LABEL       author="Ethan Coward" maintainer="ethan.coward@icloud.com"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 RUN         apt update \
                 && apt -y install git dnsutils curl iproute2 ffmpeg tini pkg-config \

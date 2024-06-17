@@ -1,6 +1,6 @@
 FROM        --platform=$TARGETOS/$TARGETARCH dart:2.17
 
-LABEL       author="Alden Bansemer" maintainer="alden@knoban.com"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 RUN         apt update \
             && apt -y install iproute2 git ca-certificates tzdata tini \

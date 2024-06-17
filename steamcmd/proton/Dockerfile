@@ -3,7 +3,7 @@
 # ---------------------------------------------
 FROM        debian:bookworm-slim
 
-LABEL       author="Torsten Widmann" maintainer="info@goover.de"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 ## install required packages
 RUN         dpkg --add-architecture i386

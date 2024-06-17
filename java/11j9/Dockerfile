@@ -1,6 +1,6 @@
 FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-11-jdk
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 RUN         apt update -y \
             && apt install -y \

@@ -3,7 +3,7 @@
 # ----------------------------------
 FROM --platform=$TARGETOS/$TARGETARCH postgres:9-alpine
 
-LABEL author="Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
 # UID 999 is the default pterodactyl user
 RUN adduser -D -h /home/container container
