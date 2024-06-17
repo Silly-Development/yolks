@@ -42,7 +42,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/Silly-Development/games:${{ matrix.game }}
+            ghcr.io/silly-development/games:${{ matrix.game }}
             ghcr.io/parkervcp/games:${{ matrix.game }}
   pushAll:
     name: "games_All:${{ matrix.game }}"
@@ -74,5 +74,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/Silly-Development/games:${{ matrix.game }}
+            ghcr.io/silly-development/games:${{ matrix.game }}
             ghcr.io/parkervcp/games:${{ matrix.game }}

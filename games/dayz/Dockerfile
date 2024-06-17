@@ -2,7 +2,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH debian:bookworm-slim
 
 LABEL       author="David Wolfe (Red-Thirten)" maintainer="red_thirten@yahoo.com"
 
-LABEL       org.opencontainers.image.source="https://github.com/Silly-Development/yolks"
+LABEL       org.opencontainers.image.source="https://github.com/silly-development/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
 ## Update base packages and install dependencies

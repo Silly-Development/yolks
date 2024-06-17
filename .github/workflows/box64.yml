@@ -35,5 +35,5 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/Silly-Development/yolks:${{ matrix.tag }}
+            ghcr.io/silly-development/yolks:${{ matrix.tag }}
             ghcr.io/parkervcp/yolks:${{ matrix.tag }}
