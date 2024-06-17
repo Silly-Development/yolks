@@ -31,7 +31,7 @@ is tagged correctly.
 * [alpine](/oses/alpine)
   * `ghcr.io/silly-development/yolks:alpine`
 * [debian](/oses/debian)
-  * `ghcr.io/silly-development/yolks:debian`
+  * `ghcr.io/parkervcp/yolks:debian`
 * [ubuntu](/oses/ubuntu)
   * `ghcr.io/silly-development/yolks:ubuntu`
 
