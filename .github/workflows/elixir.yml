@@ -40,4 +40,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/silly-development/yolks:elixir_${{ matrix.tag }}
-            ghcr.io/parkervcp/yolks:elixir_${{ matrix.tag }}
+            ghcr.io/silly-development/yolks:elixir_${{ matrix.tag }}

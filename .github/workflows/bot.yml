@@ -51,7 +51,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/silly-development/yolks:bot_${{ matrix.tag }}
-            ghcr.io/parkervcp/yolks:bot_${{ matrix.tag }}
+            ghcr.io/silly-development/yolks:bot_${{ matrix.tag }}
       - name: Move cache
         run: |
           rm -rf /tmp/.buildx-cache
@@ -83,4 +83,4 @@ jobs:
   #         platforms: linux/amd64
   #         push: true
   #         tags: |
-  #           ghcr.io/parkervcp/yolks:bot_${{ matrix.tag }}
+  #           ghcr.io/silly-development/yolks:bot_${{ matrix.tag }}

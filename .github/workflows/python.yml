@@ -43,4 +43,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/silly-development/yolks:python_${{ matrix.tag }}
-            ghcr.io/parkervcp/yolks:python_${{ matrix.tag }}
+            ghcr.io/silly-development/yolks:python_${{ matrix.tag }}

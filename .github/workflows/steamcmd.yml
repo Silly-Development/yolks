@@ -40,4 +40,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/silly-development/steamcmd:${{ matrix.distro }}
-            ghcr.io/parkervcp/steamcmd:${{ matrix.distro }}
+            ghcr.io/silly-development/steamcmd:${{ matrix.distro }}

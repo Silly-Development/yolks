@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/parkervcp/yolks:debian
+FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/silly-development/yolks:debian
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
