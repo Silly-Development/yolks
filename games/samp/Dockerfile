@@ -20,7 +20,10 @@ RUN         if [ "$(uname -m)" = "x86_64" ]; then \
                 dpkg -i libssl1.1_1.1.0g-2ubuntu4_i386.deb && \
                 rm libssl1.1_1.1.0g-2ubuntu4_i386.deb; \
             fi
-			
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container

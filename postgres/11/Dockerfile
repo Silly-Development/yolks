@@ -9,7 +9,10 @@ LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 RUN adduser -D -h /home/container container
 
 RUN     apk add --no-cache tini curl iproute2 ca-certificates fontconfig git openssl sqlite tar tzdata
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER container
 ENV HOME /home/container
 WORKDIR /home/container

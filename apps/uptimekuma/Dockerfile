@@ -48,6 +48,10 @@ RUN         chmod +x /usr/bin/cloudflared
 # install apprise
 RUN         pipx install apprise
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 ## Setup user and working directory
 RUN         adduser -D -h /home/container container -s /bin/bash container
 USER        container

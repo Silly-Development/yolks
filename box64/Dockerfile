@@ -23,7 +23,10 @@ RUN         wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt
             && wget -qO- https://ryanfortner.github.io/box64-debs/KEY.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/box64-debs-archive-keyring.gpg  \
             && apt update && apt install box64-rpi4arm64 -y
 
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 
 RUN		useradd -d /home/container -m container
 USER    container

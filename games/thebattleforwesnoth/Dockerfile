@@ -12,6 +12,10 @@ RUN   apt install -y gcc g++ libgcc1 libc++-dev gdb libc6 git tar zip unzip libs
 
 
 ## add container user
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 RUN   useradd -m -d /home/container -s /bin/bash container
 USER        container
 ENV         USER=container HOME=/home/container

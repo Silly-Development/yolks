@@ -17,6 +17,10 @@ RUN         curl -sLOJ "$(curl -s https://api.github.com/repos/GloriousEggroll/p
 RUN         tar -xzf GE-Proton*.tar.gz -C /usr/local/bin/ --strip-components=1
 RUN         rm GE-Proton*.*
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 # Proton Fix machine-id
 RUN         rm -f /etc/machine-id
 RUN         dbus-uuidgen --ensure=/etc/machine-id

@@ -23,6 +23,10 @@ RUN     wget https://packages.microsoft.com/config/debian/12/packages-microsoft-
 RUN     update-locale lang=en_US.UTF-8 \
         && dpkg-reconfigure --frontend noninteractive locales
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER    container
 ENV     USER=container HOME=/home/container
 WORKDIR /home/container

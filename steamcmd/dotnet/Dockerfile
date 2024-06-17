@@ -20,6 +20,10 @@ RUN     apt update -y \
           && apt update -y \
           && apt install -y aspnetcore-runtime-7.0 dotnet-sdk-7.0 libgdiplus aspnetcore-runtime-8.0 dotnet-sdk-8.0
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 ## install rcon
 RUN         cd /tmp/ \
             && curl -sSL https://github.com/gorcon/rcon-cli/releases/download/v0.10.3/rcon-0.10.3-amd64_linux.tar.gz > rcon.tar.gz \

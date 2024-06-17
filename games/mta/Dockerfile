@@ -12,7 +12,10 @@ RUN   apt update \
 ## install dependencies
 RUN   apt install -y iproute2 tar libssl1.1 curl git default-libmysqlclient-dev libmysqlclient-dev libreadline-gplv2-dev libncurses5-dev libncursesw5-dev \ 
         libtool zip unzip libncurses5 libncursesw5 python3 openssl locales ffmpeg apt-transport-https libc6 binutils xz-utils liblua5.1-0
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 ## configure locale
 RUN   update-locale lang=en_US.UTF-8 \
         &&   dpkg-reconfigure --frontend noninteractive locales

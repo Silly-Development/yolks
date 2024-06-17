@@ -23,6 +23,10 @@ RUN             wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-bui
 RUN             apt update
 RUN             apt install --install-recommends winehq-devel cabextract wine-binfmt -y
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 # Set up Winetricks
 RUN	            wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
                 && chmod +x /usr/sbin/winetricks

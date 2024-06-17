@@ -36,6 +36,10 @@ RUN       apt update \
 ##    install dependencies
 RUN   apt install -y ffmpeg curl python3 iproute2 libjemalloc2 tini
 
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 # Install latest youtube-dl
 RUN   curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/youtube-dl
 RUN   chmod a+rx /usr/local/bin/youtube-dl

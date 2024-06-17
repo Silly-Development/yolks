@@ -16,7 +16,10 @@ RUN         apt update \
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container

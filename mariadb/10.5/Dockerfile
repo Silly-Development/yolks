@@ -10,7 +10,10 @@ ENV         DEBIAN_FRONTEND noninteractive
 RUN         apt update -y \
             && apt install -y netcat \
             && useradd -d /home/container -m container -s /bin/bash
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container

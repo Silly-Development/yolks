@@ -13,7 +13,10 @@ RUN apt update && apt install --no-install-recommends -y curl apt-transport-http
  && apt install -y python3 build-essential git libtool netcat ffmpeg iproute2 tzdata tini \
  ## add container user
  && useradd -d /home/container -m container -s /bin/bash
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container

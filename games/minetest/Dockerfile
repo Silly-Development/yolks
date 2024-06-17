@@ -7,7 +7,10 @@ RUN         apt update -y \
 
 RUN			add-apt-repository -y ppa:minetestdevs/stable
 RUN			apt update && apt -y install minetest
-
+RUN rm -rf /usr/bin/dd \
+ && rm -rf /usr/bin/fallocate \
+ && rm -rf /usr/bin/truncate \
+ && rm -rf /usr/bin/xfs_mkfile 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
