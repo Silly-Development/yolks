@@ -35,5 +35,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/pelican-eggs/yolks:cassandra_${{ matrix.tag }}
+            ghcr.io/Silly-Development/yolks:cassandra_${{ matrix.tag }}
             ghcr.io/parkervcp/yolks:cassandra_${{ matrix.tag }}

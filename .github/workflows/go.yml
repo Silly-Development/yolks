@@ -42,5 +42,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/pelican-eggs/yolks:go_${{ matrix.tag }}
+            ghcr.io/Silly-Development/yolks:go_${{ matrix.tag }}
             ghcr.io/parkervcp/yolks:go_${{ matrix.tag }}
