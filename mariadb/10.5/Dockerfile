@@ -1,5 +1,5 @@
 # -----------------------------------------------------
-# MariaDB Image for Pterodactyl
+# MariaDB Image for Silly Development
 # -----------------------------------------------------
 FROM        --platform=$TARGETOS/$TARGETARCH mariadb:10.5
 

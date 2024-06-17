@@ -1,5 +1,5 @@
 # ----------------------------------
-# Environment: MongoDB
+# MongoDB 7
 # ----------------------------------
 FROM        --platform=$TARGETOS/$TARGETARCH mongo:7-jammy
 
