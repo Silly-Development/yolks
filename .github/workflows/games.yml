@@ -20,7 +20,6 @@ jobs:
           - arma3
           - dayz                
           - mohaa
-          - rust
           - samp
           - source
           - valheim
