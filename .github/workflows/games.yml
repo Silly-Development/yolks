@@ -11,7 +11,7 @@ on:
 jobs:
   pushAMD64:
     name: "games_AMD64:${{ matrix.game }}"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     strategy:
       fail-fast: false
       matrix:
@@ -46,7 +46,7 @@ jobs:
             ghcr.io/silly-development/games:${{ matrix.game }}
   pushAll:
     name: "games_All:${{ matrix.game }}"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     strategy:
       fail-fast: false
       matrix:

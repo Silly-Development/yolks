@@ -11,7 +11,7 @@ on:
 jobs:
   push:
     name: "yolks:apps_${{ matrix.app }}"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     strategy:
       fail-fast: false
       matrix:

@@ -11,7 +11,7 @@ on:
 jobs:
   pushArm:
     name: "yolks:bot_${{ matrix.tag }}"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     strategy:
       fail-fast: false
       matrix:
@@ -59,7 +59,7 @@ jobs:
 
   # pushAmd:
   #   name: "yolks:bot_${{ matrix.tag }}"
-  #   runs-on: ubuntu-latest
+  #   runs-on: [self-hosted, ubuntu-latest]
   #   strategy:
   #     fail-fast: false
   #     matrix:
