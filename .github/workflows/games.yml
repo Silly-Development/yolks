@@ -16,14 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         game:
-          - altv
-          - arma3
-          - dayz                
-          - mohaa
-          - samp
           - source
-          - valheim
-          - thebattleforwesnoth
           
     steps:
       - uses: actions/checkout@v4
