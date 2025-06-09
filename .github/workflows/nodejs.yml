@@ -16,8 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 12
-          - 14
           - 16
           - 17
           - 18
