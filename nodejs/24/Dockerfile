@@ -2,7 +2,6 @@ FROM        --platform=$TARGETOS/$TARGETARCH node:24-bookworm-slim
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
-# add container user and set stop signal
 RUN         useradd -m -d /home/container container
 STOPSIGNAL SIGINT
 
