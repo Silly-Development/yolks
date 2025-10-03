@@ -37,7 +37,7 @@ RUN         dpkg --add-architecture i386 \
                 libssl-dev:i386 \
                 libtinfo6:i386
 
-# Install rcon
+# Install rcon thingy
 RUN         cd /tmp/ \
             && curl -sSL https://github.com/gorcon/rcon-cli/releases/download/v0.10.3/rcon-0.10.3-amd64_linux.tar.gz > rcon.tar.gz \
             && tar xvf rcon.tar.gz \
