@@ -1,8 +1,6 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:18-alpine
+FROM        --platform=$TARGETOS/$TARGETARCH node:22-alpine
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
-LABEL       org.opencontainers.image.source="https://github.com/gOOvER/own-pterodactyl-images"
-LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apk update \
             && apk upgrade

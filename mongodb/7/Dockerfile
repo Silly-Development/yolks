@@ -1,11 +1,8 @@
-# ----------------------------------
-# MongoDB 7
-# ----------------------------------
 FROM        --platform=$TARGETOS/$TARGETARCH mongo:7-jammy
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
-ENV         DEBIAN_FRONTEND noninteractive
+ENV         DEBIAN_FRONTEND=noninteractive
 
 RUN         apt update -y \
             && apt install -y netcat iproute2 \

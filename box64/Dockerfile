@@ -1,8 +1,8 @@
 FROM        --platform=$TARGETOS/$TARGETARCH debian:bookworm-slim
 
-LABEL       author="QuintenQVD" maintainer="josdekurk@gmail.com"
+LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
-ENV     DEBIAN_FRONTEND noninteractive
+ENV     DEBIAN_FRONTEND=noninteractive
 
 ## Update base packages
 RUN          apt update \

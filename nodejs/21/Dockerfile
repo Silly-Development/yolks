@@ -26,13 +26,13 @@ RUN         apt update \
                 iputils-ping \
                 libnss3 \
                 tini
-				
+
+RUN         npm install --global npm@10.x.x typescript ts-node @types/node
+
 RUN rm -rf /usr/bin/dd \
  && rm -rf /usr/bin/fallocate \
  && rm -rf /usr/bin/truncate \
  && rm -rf /usr/bin/xfs_mkfile 
- 
-RUN         npm install --global npm@10.x.x typescript ts-node @types/node
 
 # install pnpm
 RUN         npm install -g corepack@latest

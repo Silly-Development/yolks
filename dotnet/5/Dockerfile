@@ -2,7 +2,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/parkervcp/yolks:debian
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
-ENV         DEBIAN_FRONTEND noninteractive
+ENV         DEBIAN_FRONTEND=noninteractive
 
 RUN         apt update -y \
             && apt upgrade -y \

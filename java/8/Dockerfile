@@ -1,9 +1,6 @@
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:8u312-b07-jdk-focal
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:8-jdk-noble
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
-
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
-LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apt update -y \
             && apt install -y \
@@ -20,11 +17,13 @@ RUN         apt update -y \
                 libfreetype6 \
                 tini \
 				zip \
-				unzip
+				unzip \
+                jq
+                
 RUN rm -rf /usr/bin/dd \
- && rm -rf /usr/bin/fallocate \
- && rm -rf /usr/bin/truncate \
- && rm -rf /usr/bin/xfs_mkfile 
+    && rm -rf /usr/bin/fallocate \
+    && rm -rf /usr/bin/truncate \
+    && rm -rf /usr/bin/xfs_mkfile
 ## Setup user and working directory
 RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container

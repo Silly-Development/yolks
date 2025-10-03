@@ -2,9 +2,6 @@ FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:16-jdk-focal
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
-LABEL       org.opencontainers.image.licenses=MIT
-
 RUN         apt update -y \
             && apt install -y \
                 curl \
@@ -20,7 +17,9 @@ RUN         apt update -y \
                 libfreetype6 \
                 tini \
 				zip \
-				unzip
+				unzip \
+                jq
+                
 RUN rm -rf /usr/bin/dd \
  && rm -rf /usr/bin/fallocate \
  && rm -rf /usr/bin/truncate \

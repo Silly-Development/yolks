@@ -2,6 +2,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH node:24-bookworm-slim
 
 LABEL       author="Silly Development" maintainer="gamer@sillydev.co.uk"
 
+# add container user and set stop signal
 RUN         useradd -m -d /home/container container
 STOPSIGNAL SIGINT
 
@@ -26,12 +27,12 @@ RUN         apt update \
                 libnss3 \
                 tini
 
+RUN         npm install --global npm@latest typescript ts-node @types/node
+
 RUN rm -rf /usr/bin/dd \
  && rm -rf /usr/bin/fallocate \
  && rm -rf /usr/bin/truncate \
  && rm -rf /usr/bin/xfs_mkfile 
-
-RUN         npm install --global npm@latest typescript ts-node @types/node
 
 # install pnpm
 RUN         npm install -g corepack
